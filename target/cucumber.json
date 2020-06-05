@@ -1,0 +1,405 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3300845000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-05T20:29:28.652Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1155000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login with valid information",
+        "description": "",
+        "id": "login-page;login-with-valid-information",
+        "after": [
+          {
+            "result": {
+              "duration": 79459000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1799821000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enter the valid \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter_the_valid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3026927000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26159000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the title contains",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_title_contains(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Zero - Account Summary"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@valid"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2904559000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-05T20:29:36.970Z",
+        "before": [
+          {
+            "result": {
+              "duration": 201000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Login with invalid information",
+        "description": "",
+        "id": "login-page;login-with-invalid-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 68754000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3738886000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enter the invalid \"password\" and \"UserUser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter_the_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3026628000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13356000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the title contains",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_title_contains(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Zero - Log in"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39651000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the error message is displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_message_is_displayed(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Login and/or password are wrong."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalid"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2738869000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-05T20:29:46.776Z",
+        "before": [
+          {
+            "result": {
+              "duration": 145000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login with invalid information",
+        "description": "",
+        "id": "login-page;login-with-invalid-information;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 874404000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3803749000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enter the invalid \"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter_the_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3020958000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18444000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the title contains",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_title_contains(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Zero - Log in"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44689000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the error message is displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_message_is_displayed(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Login and/or password are wrong."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalid"
+          }
+        ]
+      }
+    ],
+    "name": "Login Page",
+    "description": "",
+    "id": "login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
