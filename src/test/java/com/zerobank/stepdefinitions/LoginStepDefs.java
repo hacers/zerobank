@@ -19,8 +19,9 @@ public class LoginStepDefs {
     }
 
 
-    @When("the user enter the valid username and password")
+    @When("the user enter the valid {string} and {string}")
     public void the_user_enter_the_valid_and(String username, String password) {
+        BrowserUtils.waitFor(2);
         LoginPage loginPage = new LoginPage();
         loginPage.login(ConfigurationReader.get(username), ConfigurationReader.get(password));
     }
