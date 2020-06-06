@@ -16,7 +16,7 @@ Feature: Login Page
   @invalid
   Scenario Outline: Login with invalid information
     When the user enter the invalid "<username>" and "<password>"
-    Then the user should be able to login
+    Then the user should not be able to login
     And  the title contains
       | Zero - Log in |
     And the error message is displayed
